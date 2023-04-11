@@ -32,4 +32,6 @@ namespace Rage {
 	using GetNativeHandler = NativeHandler(*)(PVOID, NATIVEHASH);
 	using FixVectors = VOID(*)(PNativeCallContext);
 
+	#define NATIVE_CALL __forceinline
+
 }
