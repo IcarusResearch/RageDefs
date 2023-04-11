@@ -1,5 +1,6 @@
 #pragma once
 
+#include <span>
 #include <Windows.h>
 
 namespace Rage {
