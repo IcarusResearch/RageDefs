@@ -6,6 +6,8 @@
 
 namespace Rage {
 
+	using RunScriptThreads = BOOL(*)(UINT32 uOpsToExec);
+
 	typedef enum class ThreadState : UINT32 {
 		RUNNING,
 		IDLE,
