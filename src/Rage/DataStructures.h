@@ -15,6 +15,9 @@ namespace Rage {
 		// TODO implement methods when needed
 
 	public:
+		UINT16 GetSize() const {
+			return uSize;
+		}
 		const T* begin() const {
 			return pData;
 		}

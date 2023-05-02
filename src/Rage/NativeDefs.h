@@ -8,7 +8,7 @@ namespace Rage {
 		alignas(0x08) FLOAT x;
 		alignas(0x08) FLOAT y;
 		alignas(0x08) FLOAT z;
-	} VecF, *PVecF;
+	} Vec3F, *PVec3F;
 
 	typedef struct alignas(0x10) Vec3FA {
 		FLOAT x;
@@ -21,7 +21,7 @@ namespace Rage {
 		UINT32 uParamCount;					// 0x08
 		PVOID pParams;						// 0x10
 		UINT32 uDataCount;					// 0x18
-		PVecF vecsOut[0x04];				// 0x20
+		PVec3F vecsOut[0x04];				// 0x20
 		Vec3FA vecsIn[0x04];				// 0x40
 		BYTE padding[0x60];					// 0x80
 	} NativeCallContext, *PNativeCallContext;
